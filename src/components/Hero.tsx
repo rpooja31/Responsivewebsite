@@ -4,9 +4,9 @@ import { BsArrowRight } from "react-icons/bs";
 const Hero = () => {
     return (
         <div className="container pt-8">
-            <div className="grid xl:grid-cols-4 gap-8 items-center">
+            <div className="grid xl:grid-cols-3 xl:grid-rows-2 gap-8 items-center">
                 {/* Left Section (Main Image + Text) */}
-                <div className="relative">
+                <div className="relative xl:col-span-2 xl:row-start-1 xl:row-end-[-1]">
                     <img 
                         className="w-full max-w-[500px] h-[300px] object-cover rounded-lg" 
                         src="images/hero__1.webp" 
@@ -17,7 +17,7 @@ const Hero = () => {
                         <h2 className="text-lg sm:text-2xl md:text-3xl font-bold">
                             Dried Fruits Best Quality
                         </h2>
-                        <p className="text-gray-600 text-base">Starting At</p>
+                        <p className="text-gray-500 text-xl">Starting At</p>
                         <div className="font-medium text-red-600 text-xl sm:text-2xl">$18.36</div>
                         <button className="bg-accentDark hover:bg-accent text-white rounded-full flex items-center gap-1 px-3 py-1 text-[10px] sm:px-4 sm:py-2 sm:text-[12px] cursor-pointer">
                             Shop Now <BsArrowRight size={14} />
