@@ -27,9 +27,9 @@ const FeatureSectionBreakfast = (props) => {
                 </div>    
             </div>
             <div className='grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 mt-8 gap-2'>
-                <div>
+                {/* <div>
                     <img src='images/feature__1.webp' alt='banner'/>
-                </div>
+                </div> */}
                 {data.map((el) => (
                     <ProductCard
                     key={el.id}
